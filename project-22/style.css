@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    width:100%;
+    background:#EEECEB;
+}
+footer{
+    position:fixed;
+    background:#140B5C;
+    width:100%;
+    bottom:0;
+    left:0;
+}
+footer .content{
+/* background:red; */
+max-width:1459px;
+margin:auto;
+padding:30px 20px 40px 20px;
+}
+footer .content .top{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-bottom:50px;
+}
+.content .top .logo{
+    color:#fff;
+    font-size:30px;
+}
+.content .top .media-icons{
+    display:flex;
+
+}
+.content .top .media-icons a{
+    height:40px;
+    width:40px;
+    background: red;
+    margin:0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height:40px;
+    color:#fff;
+    font-size:17px;
+    text-decoration:none;
+    transition:all 0.4s ease;
+}
+.content .top .media-icons a:nth-child(1){
+    background: #426782;
+}
+.content .top .media-icons a:nth-child(1):hover{
+    background: #fff;
+    color:#426782;
+}
+.content .top .media-icons a:nth-child(2){
+    background: palevioletred;
+}
+.content .top .media-icons a:nth-child(2):hover{
+    background: #fff;
+    color:palevioletred;
+}
+.content .top .media-icons a:nth-child(3){
+    background: #1DA1F2;
+}
+.content .top .media-icons a:nth-child(3):hover{
+    background: #fff;
+    color:#1DA1F2;
+}
+.content .top .media-icons a:nth-child(4){
+    background: greenyellow;
+}
+.content .top .media-icons a:nth-child(4):hover{
+    background: #fff;
+    color:greenyellow;
+}
+.content .top .media-icons a:nth-child(5){
+    background: red;
+}
+.content .top .media-icons a:nth-child(5):hover{
+    background: #fff;
+    color:red;
+}
+footer .content .link-boxes{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+footer .content .link-boxes .box{
+    /* background: red; */
+    width:calc(100% / 5 - 10px);
+}
+footer .content .link-boxes .box li{
+    list-style: none;
+    margin:6px 0;
+
+}
+footer .content .link-boxes .box li a{
+    text-decoration: none;
+   color:#fff ;
+   font-size:14px;
+   font-weight:400;
+   opacity:0.8;
+   transition: all 0.4s ease;
+}
+footer .content .link-boxes .box li a:hover{
+opacity:1;
+text-decoration: underline;
+}
+
+ .content .link-boxes .box .link-name{
+    color:#fff;
+    font-size:18px;
+    font-weight:400;
+    margin-bottom:10px;
+    position:relative;
+
+
+}
+ .link-boxes .box .link-name::before{
+    content:'';
+position:absolute;
+height:2px;
+width:35px;
+background:#fff;
+left:0px;
+bottom:-2px;
+
+}
+ footer::before{
+    content:'';
+    position:absolute;
+    height:1px;
+    width:100%;
+    background:#AFAFB6;
+    left:0;
+    top:100px;
+}
+.content .link-boxes .input-box{
+margin-right: 55px;
+}
+
+.link-boxes .input-box input{
+height:40px;
+/* background: ; */
+width:calc(100% + 55px);
+/* width:100px; */
+outline:none;
+border:2px solid #AFAFB6;
+background:#140B5C;
+border-radius:4px;
+padding:0 15px;
+font-size:15px;
+color:#fff;
+margin-top:5px;
+
+}
+.link-boxes .input-box input::placeholder{
+    color:#AFAFB6;
+    font-size: 16px;
+}
+.link-boxes .input-box input[type="button"]
+{
+    background:#fff;
+    color:#140B5C;
+    border:none;
+    font-size:18px;
+    font-weight: 500;
+    margin:4px 0;
+    opacity: 0.8;
+    transition:all 0.4s ease;
+    cursor: pointer;
+
+}
+.input-box input[type="button"]:hover{
+    opacity:1;
+}
+footer .bottom-details
+{
+    width:100%;
+    background: #0F0844;
+}
+footer .bottom-details .bottom-text{
+    max-width:1250px;
+    margin:auto;
+    padding:20px 4px;
+    display:flex;
+    justify-content: space-between;
+
+}
+.bottom-details .bottom-text span,
+.bottom-details .bottom-text a{
+    font-size:14px;
+    font-weight:300;
+    color:#fff;
+    opacity:0.8;
+    text-decoration: none;
+}
+.bottom-details .bottom-text a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+.bottom-details .bottom-text a{
+    margin-right: 10px;
+}
+@media (max-width:900px) {
+    footer .content .link-boxes{
+        flex-wrap:wrap;
+    }
+    footer .content .link-boxes .input-box{
+        width:40%;
+        margin-top: 10px;
+    }
+}

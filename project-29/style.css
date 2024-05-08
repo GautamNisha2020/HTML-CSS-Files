@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins',sans-serif;
+}
+body,html{
+    background: #ecf0f3;
+    
+    
+}
+.main{
+    /* %; */
+    box-shadow:-3px -3px 7px #ffffff,
+               3px 3px 5px #ceced1,
+               inset -3px -3px 7px #ffffff,
+               inset     3px 3px 5px #ceced1;
+               height:105vh;
+               width:300px;
+               left:100%;
+               position:relative;
+
+
+}
+.main .content .text{
+font-size:25px;
+font-weight:600;
+/* margin-top:18px; */
+padding:10px 10px;
+}
+.main .list li {
+    padding:20px 20px 10px 20px;
+    text-decoration: none;
+  /* list-style: none; */
+}
+.main .list li a{
+    font-size:29px;
+    /* font-weight:400; */
+   color:black;
+  display:block;
+  /* margin-top:20px; */
+  box-shadow:-3px -3px 7px #ffffff,
+             3px 3px 5px #ceced1;
+             list-style: none;
+             text-decoration: none;
+             border-radius:6px;
+}
+.main .icons{
+font-size:29px;
+align-items:center;
+justify-content: center;
+margin-left:40px;
+margin-top:10px;
+/* border-radius: 50%; */
+/* padding:10px 10px 10px 10px; */
+
+
+}
+.main .icons a{
+    box-shadow:-3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+border-radius:50%;
+padding:10px 10px 10px 10px;
+}
+ .icons a:nth-child(1){
+    color: blue;
+ }
+ .icons a:nth-child(2){
+    color: #2979ff;
+ }
+ .icons a:nth-child(3){
+    color: pink;
+ }
+ .icons a:nth-child(4){
+    color: red;
+ }
+ .main .list a:hover,
+ .main .icons a:hover
+ {
+    /* position:absolute; */
+    content:'';
+    left:0;
+    right:0;
+    box-shadow: inset -3px -3px 7px #ffffff,
+     inset 3px 3px 5px #ceced1;
+     bottom:0;
+ }
+        .main .list a:hover{
+            color:#3498db;
+        }                      
+        .content label{
+        /* display:flex; */
+        position:relative; 
+        }
+        .main .content{
+display:flex;
+       justify-content: space-evenly;
+        }
+        .content .button-cancel{
+top:10px;
+          font-size:30px;
+          border-radius:50%;
+          /* align-items:center; */
+
+          font-weight:400;
+          box-shadow: -3px -3px 7px #ffffff,
+
+        }
+        label{
+            font-size:30px;  
+            color:#31344b;
+            box-shadow: -3px -3px 7px #ffffff,
+            3px 3px 5px #ceced1;
+            height:37px;
+            width:37px;
+            border-radius:50%;
+           text-align:center;
+            /* justify-content: center; */
+            cursor:pointer;
+            /* left:10px; */
+transition:all 0.3s ease;
+
+        }
+
+        .bar{
+     position:absolute;
+     left:5px;
+     top:10px;
+        }
+        #check{
+            display:none;
+        }
+        label:hover{
+            box-shadow:-3px -3px 7px #ffffff,
+            3px 3px 5px #ceced1;
+            color:#3498db;
+        }
+        #check:checked ~ .main{
+            left:0;
+            /* opacity:0; */
+        }
+     

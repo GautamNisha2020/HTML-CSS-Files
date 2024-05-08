@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+}
+nav{
+    background: #424242;
+   width:100% ;
+   /* padding:10px 0; */
+   position:fixed;
+   z-index: 12;
+
+}
+nav .menu{
+max-width:1259px;
+/* background:red; */
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 20px ;
+}
+.menu .logo a{
+text-decoration:none;
+color:#fff;
+font-weight:800;
+font-size: 30px;
+
+}
+.menu ul{
+    display:inline-flex;
+    /* color:black; */
+} 
+.menu ul li{
+    list-style: none;
+    margin-left:7px;
+    /* color:black; */
+
+}
+.menu li a{
+    font-size:18px;
+    color:#fff;
+    border-radius:5px;
+    /* background: red; */
+    transition:all 0.3 ease;
+    font-weight:400;
+    text-decoration: none;
+    padding: 8px 10px;
+
+
+}
+.menu li a:hover{
+    background: #fff;
+    color:#000;
+}
+.img{
+background: url(images.jpg) no-repeat;
+height:100vh;
+width:100%;
+background-position: center;
+background-size: cover;
+position: relative;
+}
+.img ::before{
+    content:'';
+    position: absolute;
+    height:100%;
+    width:100%;
+    background: rgba(0,0,0,0.4);
+
+}
+.centre{
+    position:absolute;
+    top:52%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    /* background: red; */
+    padding:0 20px;
+    text-align: center;
+    width:100%;
+}
+
+.centre .title{
+    color:#fff;
+    font-size:50px;
+    font-weight:600;
+}
+.centre .titles{
+    color:#fff;
+    font-size:46px;
+    font-weight:600;
+}
+.centre .btns{
+    margin-top: 20px;
+
+}
+.centre .btns button{
+    height:55px;
+    width:170px;
+    cursor: pointer;
+    padding:0 10px;
+    font-size:20px;
+    font-weight:400;
+    border-radius:5px;
+    margin:0 10px;
+    transition: all 0.3 ease;
+    outline: none;
+    border:2px solid #fff;
+}
+.centre .btns button:first-child{
+    color:#fff;
+    background: none;
+}
+.centre .btns button:first-child:hover{
+background: #fff;
+color:#000;
+}
+    

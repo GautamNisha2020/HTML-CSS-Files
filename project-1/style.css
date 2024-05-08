@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+    .main{   
+       height:350px;
+    max-width: 370px;
+     box-shadow:0.1; 
+    padding: 25px;
+    width:600px;
+    background-color: wheat;
+    border-radius: 50px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin: auto;
+}
+.body{
+   
+    height:100px;
+    display:flex;
+    align-items: centre;
+    justify-content: centre;
+    background-color: white;
+
+
+}
+.block1{
+height:100px;
+width:100px;
+/* margin-left:200px; */
+position: relative;
+padding:3px;
+border-radius:50%; 
+background-color: blue;
+
+
+}
+.block1 .imgg{
+height:100%;
+width:100%;
+object-fit:cover; 
+border-radius: 50%; 
+border:2px solid white;
+
+}
+.main .text-data{
+    /* display:flex; */
+    flex-direction:column;
+    align-items: center;
+    color: black;
+     
+}
+.text-data .name{
+    font-size:22px;
+    font-weight:500; 
+    /* padding: 1px; */
+/* text-align: center; */
+    
+}
+.text-data .job{
+    font-size:15px;
+    font-weight:400; 
+    padding: 0;
+
+    /* margin-top: 5px; */
+    /* text-align: center; */
+    
+}
+.main .media-buttons{
+    display:flex;
+    align-items: center;
+    margin-top: 15px;
+
+
+
+}
+.media-buttons .link{
+display:flex;
+align-items: center;
+justify-content: center;
+color:aliceblue;
+font-size: 18px;
+height: 34px;
+width: 34px;
+border-radius: 50%;
+margin-right: 8px;
+background-color: aqua;
+text-decoration: none;
+
+}
+.main .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+}
+.buttons .button{
+    margin-right:10px;
+    padding:8px 24px;
+    background-color: blue;
+    border-radius: 24px;
+    border:none;
+    font-size: 14px;
+    font-weight: 400;
+    /* color: blue; */
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.buttons .button:hover{
+    background-color: darkolivegreen;
+
+}
+.main .analystics{
+    display: flex;
+    align-items: center;
+    /* margin-top: 25px; */
+
+}
+.analystics .data{
+display: flex;
+align-items: center;
+padding: 0 20px;
+/* border: 2px solid white ; */
+
+}
+.data i{
+    font-size:18px ;
+    margin-right: 6px;
+
+}
+.data .last-child{
+border-right: none;
+}
+.main::before{
+    content: "";
+    position:absolute;
+    top:0;
+    left:t;
+    height: 30%;
+    width: 50%;
+    background-color: blue;
+    border: 24px 24px 0 0;
+    border-radius: 50px;
+}

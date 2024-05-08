@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;}
+
+    html,body{
+display:grid;
+background:#aa00ff;
+/* height:100%; */
+width:100%;
+place-items: center;
+
+    }
+    .main{
+        display:flex;
+        max-width:1100px;
+        justify-content: center;
+        align-items: center;
+        /* top:50%; */
+        margin-top: 50px;
+    }
+    .main .content{
+        width:calc(33%-10px);
+        display: flex;
+        flex-direction:column;
+
+        /* align-items:center; */
+        /* justify-content: center; */
+        /* padding:20px 20px; */
+        /* border-radius:5px; */
+
+    }
+    .content{
+        background: white;
+        height:410px;
+        width:400px;
+        /* left:50%; */
+        /* top:30%; */
+        margin:20px 0 0 20px;
+        /* display:flex; */
+
+    }
+    .content .profile{
+align-items:center;
+justify-content: center;
+padding:6px 0 0 100px;
+/* border:#aa00ff; */
+    }
+     .profile img{
+        border:3px solid #aa00ff;
+        border-radius:50%;
+        height:150px;
+
+
+     }
+     .content .name{
+        font-size:24px;
+        font-weight:600;
+        color:#aa00ff;
+        align-items:center;
+        justify-content:center;
+        padding-left: 100px;
+     }
+     .content .rating{
+        padding-left:100px;
+        padding-top:6px;
+
+     }
+      .content .rating i{
+      color:#aa00ff;
+    font-size:26px;
+    /* font-weight:600; */
+    /* padding-left:60px; */
+
+}
+ .content .text{
+    padding-left:40px;
+    padding-top:6px;
+ }
+ .content .buttons{
+padding-left:40px;
+justify-content: space-between;
+/* padding-right:80px ; */
+
+ }
+  .content .buttons input {
+      padding: 10px 10px 10px 10px;
+      margin-top:10px;  
+      color:#aa00ff;
+      font-size:20px;
+      font-weight: 600;
+      border-radius: 5px;
+      border:1px solid #aa00ff;
+      /* padding: 20px; */
+      padding-right:20px ;
+      /* justify-content: space-between; */
+      
+
+      /* justify-content: space-between; */
+
+ }
+ .content .buttons input:first-child{
+    color:#aa00ff;
+    background: none;
+}
+.content .buttons input:first-child:hover{
+background: #aa00ff;
+color:#000;
+}
+    .content .buttons .btn{
+        background: #aa00ff;
+        color:black;
+    }
+

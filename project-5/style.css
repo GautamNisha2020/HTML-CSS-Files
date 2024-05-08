@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+body{
+    margin: 0;
+    padding:0;
+    font-family:arial;
+    background-color: #1a237e
+    ;
+}
+.main{
+    height:150px;
+    width:250px;
+    /* border:2px solid black; */
+
+    /* margin: auto; */
+    /* margin-top: 50px; */
+    top:30%;
+    left: 30%;
+    position: absolute;
+    border-radius: 25px;
+    background-color: white;
+transform: translate(-50%,-50%);
+
+
+}
+.main .header{
+    position:absolute;
+    padding:5px 30px;
+    color:#03a9f4;
+    font-size:20px;
+    font-weight: 500;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.main .group{
+    padding:35px 30px;
+}
+.group .items{
+    margin:10px 0;
+    font-weight: 600;
+
+}
+.box{
+    height:18px;
+    width:36px;
+    background:white;
+    outline:none;
+    cursor: pointer;
+    border-radius:20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    -webkit-appearance: none;
+    transition: .5s;
+}
+input[type= "checkbox"]:before{
+    content:"";
+    position: absolute;
+    height:18px;
+    width:18px;
+    border-radius: 20px;
+    transform: scale(.85);
+    background: linear-gradient(#fff,#f2f2f2f2,#e6e6e6,#d9d9d9);
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+input:checked[type="checkbox"]{
+    background: #387cfa;
+}
+
+input:checked[ type="checkbox"]:before{
+    /* left:78px; */
+    /* right:1px; */
+}
+

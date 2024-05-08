@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins',sans-serif;
+}
+body{
+    display:flex;
+    align-items:centre;
+    justify-content: center;
+    min-height:10vh ;
+    background: black;
+
+}
+.main{
+   height:100px;
+   width:500px;
+   position: relative;
+}
+.main img{
+    height:200px;
+    width:300px;
+    margin-top:40px;
+margin-left: 50px;
+position: absolute;
+
+}
+.main label{
+    position: relative;
+    color:red;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    .main label span{
+        color:blue;
+        font-size:20px;
+        text-transform: uppercase;
+        display: block;
+        text-align:center;
+        border:2px solid white;
+        width:180px;
+        height:50px;
+        line-height: 48px;
+      cursor:pointer;
+      transform: all 0.3s ease;
+
+
+    }
+    .main label span:before{
+        content:"Turn Off";
+        }
+    .main label span:hover{
+        background: white;
+
+    }
+    .main img#bulb-on{
+   opacity:0;
+    animation:glow 3s linear infinite;
+    position: relative;
+    }
+@keyframes glow{
+from{
+opacity:0;
+}
+To{
+    opacity:1;
+
+}
+}
+#btn:checked ~img#bulb-on{
+    animation:none;
+}
+
+#btn:checked ~ label span:before {
+    content:"Turn On";
+}
+.main input{
+    display:none;
+}
+
+   
+
+
+
+
